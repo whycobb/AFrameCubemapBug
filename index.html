@@ -1,13 +1,11 @@
 <html>
-  <head>
-    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
-	<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.misc.min.js"></script>
-	<script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
-  </head>
-  <body>
-	
-  
-    <a-scene stats background="color: black">
+	<head>
+		<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+		<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.misc.min.js"></script>
+		<script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  	</head>
+	<body>
+		<a-scene stats background="color: black">
 			<a-assets>
 				<a-cubemap id="myCube">
 					<img src="posx.png">
@@ -18,8 +16,8 @@
 					<img src="negz.png">
 				</a-cubemap>
 			</a-assets>
-	    
-		
+
+
 			<a-entity position="0 0 3" rotation="0 0 0">
 				<a-camera></a-camera>
 				</a-entity>	
@@ -44,8 +42,8 @@
 
 			<a-light type="ambient" color="#20303f" intensity="1"></a-light>
 			<a-light yellower type="directional" color="#ffffff" intensity="3" position="-1 10 6"></a-light>
-    </a-scene>
-	
-	<script> console.log(THREE); </script>
-  </body>
+		</a-scene>
+
+		<script> console.log(THREE); </script>
+  	</body>
 </html>
